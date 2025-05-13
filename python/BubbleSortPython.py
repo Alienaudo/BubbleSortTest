@@ -1,7 +1,6 @@
-import json
 import time
 from typing import List
-from arr import unsortedList
+
 
 def bubbleSort(array: List[int]) -> List[int]:
 
@@ -23,11 +22,23 @@ def bubbleSort(array: List[int]) -> List[int]:
 
     return array
 
-start = time.time()
-result = bubbleSort(unsortedList)
-end = time.time()
 
-execTime = end - start
+numberList: List[int] = []
 
-print(result)
-print(f"Tempo de execução: {execTime:.4f} segundos")
+with open("../arr.txt", "r") as f:
+
+    for line in f:
+
+        numberList.append(int(line.strip()))
+
+start: float = time.time()
+bubbleSort(numberList)
+end: float = time.time()
+
+execTime: float = end - start
+
+print(f"Execution time: {execTime:.4f} seconds")
+
+with open("../sortedArray.txt", "w") as f:
+
+    f.write("\n".join(str(num) for num in numberList))
