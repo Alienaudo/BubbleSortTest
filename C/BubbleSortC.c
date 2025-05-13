@@ -26,12 +26,12 @@ void bubbleSort(int *array, const int n)
 
         for (j = 0; j < interLoop; ++j) {
 
-        if (array[j] > array[j + 1]) {
+            if (array[j] > array[j + 1]) {
 
-            swap(&array[j], &array[j + 1]);
-            swapped = true;
+                swap(&array[j], &array[j + 1]);
+                swapped = true;
 
-        }
+            }
 
         }
 
