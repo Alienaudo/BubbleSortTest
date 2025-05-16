@@ -13,15 +13,15 @@ public class BubbleSort {
     private static void sort(ArrayList<Integer> array) {
 
         int k, i;
-        final int size = array.size();
+        final int size = array.size() - 1;
 
         boolean swapped;
 
-        for (k = 0; k < size - 1; ++k) {
+        for (k = 0; k < size; ++k) {
 
             swapped = false;
 
-            for (i = 0; i < size - 1 - k; ++i) {
+            for (i = 0; i < size - k; ++i) {
 
                 int leftElement = array.get(i);
                 int rightElement = array.get(i + 1);
@@ -37,7 +37,8 @@ public class BubbleSort {
 
             }
 
-            if (!swapped) break;
+            if (!swapped)
+                break;
 
         }
 
