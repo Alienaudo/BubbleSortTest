@@ -1,0 +1,21 @@
+{
+    "name": "bubblesorttest",
+    "version": "1.0.0",
+    "description": "This repository compares the implementation of the **Bubble Sort** algorithm across multiple programming languages. Each implementation sorts an array of **1,000,000** numbers to evaluate performance and syntax differences.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Alienaudo/BubbleSortTest.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "module",
+    "bugs": {
+        "url": "https://github.com/Alienaudo/BubbleSortTest/issues"
+    },
+    "homepage": "https://github.com/Alienaudo/BubbleSortTest#readme"
+}
