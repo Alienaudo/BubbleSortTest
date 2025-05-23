@@ -1,8 +1,7 @@
 import time
-from typing import List
 
 
-def bubbleSort(array: List[int]) -> List[int]:
+def bubbleSort(array: list[int]) -> list[int]:
 
     i: int = len(array) - 1
     isSorted: bool = False
@@ -23,22 +22,22 @@ def bubbleSort(array: List[int]) -> List[int]:
     return array
 
 
-numberList: List[int] = []
+numberList: list[int] = []
 
-with open("../arr.txt", "r") as f:
+with open("./arr.txt", "r") as f:
 
     for line in f:
 
         numberList.append(int(line.strip()))
 
 start: float = time.time()
-bubbleSort(numberList)
+_ = bubbleSort(numberList)
 end: float = time.time()
 
-execTime: float = end - start
+execTime: float = (end - start) * 1000
 
-print(f"Execution time: {execTime:.4f} seconds")
+print(f"Execution time: {execTime:.2f} ms")
 
-with open("../sortedArray.txt", "w") as f:
+with open("./sortedArray.txt", "w") as f:
 
-    f.write("\n".join(str(num) for num in numberList))
+    _ = f.write("\n".join(str(num) for num in numberList))
