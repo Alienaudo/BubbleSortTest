@@ -85,7 +85,7 @@ int main(void) {
     const double time = (double)(end - start) / CLOCKS_PER_SEC;
 
     printArray(numberList, n);
-    printf("Execution time: %f seconds\n", time);
+    printf("Execution time: %.2f seconds\n", time);
 
     return 0;
 
