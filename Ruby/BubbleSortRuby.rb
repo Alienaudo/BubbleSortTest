@@ -5,7 +5,6 @@ def bubblesort(array)
 
     (0...size).each do |i|
 
-        iSize = 0...array.count - 1 - i
         swapped = false
 
         (0...(size - i)).each do |j|
