@@ -11,6 +11,5 @@ The goal of this project is to benchmark and analyze the Bubble Sort algorithm i
 - **Java**
 - **JavaScript**
 - **Ruby**
-- **Crystal**
 
 Each implementation is designed to sort an array of 1 million elements, allowing for a direct comparison of execution time, code readability, and language-specific characteristics.
